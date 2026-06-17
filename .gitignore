@@ -1,0 +1,26 @@
+# Secrets
+.env
+*.env
+secrets.json
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large model files
+*.bin
+*.pt
+*.safetensors
+*.gguf
