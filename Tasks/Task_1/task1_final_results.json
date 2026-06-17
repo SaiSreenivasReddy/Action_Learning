@@ -1,0 +1,26 @@
+{
+  "Qwen2.5-1.5B": {
+    "best_layer": 15,
+    "auroc": 0.8556,
+    "auprc": "N/A",
+    "f1": "N/A",
+    "latency_ms": "N/A",
+    "alllayer_lr_auroc": 0.8556
+  },
+  "Llama-3.2-1B": {
+    "best_layer": 11,
+    "auroc": 0.8243,
+    "auprc": 0.7551,
+    "f1": 0.6567,
+    "latency_ms": 5805.1,
+    "alllayer_lr_auroc": 0.8314
+  },
+  "Llama-3.2-3B": {
+    "best_layer": 18,
+    "auroc": 0.835,
+    "auprc": 0.762,
+    "f1": 0.6866,
+    "latency_ms": 6848.3,
+    "alllayer_lr_auroc": 0.8471
+  }
+}

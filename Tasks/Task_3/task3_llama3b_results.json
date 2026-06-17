@@ -1,0 +1,66 @@
+{
+  "model": "Llama-3.2-3B",
+  "V1_SelfCheckGPT_NLI": {
+    "auroc": 0.6024,
+    "auprc": 0.6138,
+    "f1": 0.6818,
+    "ece": 0.1654,
+    "latency_ms": 16824.0,
+    "forward_passes_per_query": 5
+  },
+  "V2_SelfCheckGPT_BERTScore": {
+    "auroc": 0.1886,
+    "auprc": 0.3431,
+    "f1": 0.6316,
+    "ece": 0.2812,
+    "latency_ms": 5984.4,
+    "forward_passes_per_query": 5
+  },
+  "V3_SelfCheckGPT_Ngram": {
+    "auroc": 0.5,
+    "auprc": 0.5,
+    "f1": 0.0,
+    "ece": 0.2987,
+    "latency_ms": 0.0,
+    "forward_passes_per_query": 5
+  },
+  "cross_domain": {
+    "medical": {
+      "V1_NLI_auroc": 0.5234,
+      "V2_BERTScore_auroc": 0.4512,
+      "V3_Ngram_auroc": 0.5
+    },
+    "legal": {
+      "V1_NLI_auroc": 0.4987,
+      "V2_BERTScore_auroc": 0.4123,
+      "V3_Ngram_auroc": 0.5
+    }
+  },
+  "V4_EarlyDetection": {
+    "auroc_full_128tokens": 0.587,
+    "auroc_half_64tokens": 0.5911,
+    "latency_full_ms": 16145.4,
+    "latency_half_ms": 9283.4,
+    "speed_saved_percent": 42.5
+  },
+  "k_curve": {
+    "K_values": [
+      2,
+      3,
+      5,
+      10
+    ],
+    "NLI_auroc": [
+      0.5521,
+      0.5734,
+      0.6024,
+      0.6143
+    ],
+    "NLI_latency_ms": [
+      6842.3,
+      9876.4,
+      16824.0,
+      33201.5
+    ]
+  }
+}

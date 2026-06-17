@@ -1,0 +1,17 @@
+{
+  "Train_1B": {
+    "test_on_1b": 0.835,
+    "test_on_3b": 0.7966,
+    "test_on_qwen": 0.7269
+  },
+  "Train_3B": {
+    "test_on_3b": 0.8329,
+    "test_on_1b": 0.8279,
+    "test_on_qwen": 0.7546
+  },
+  "Train_Qwen": {
+    "test_on_qwen": 0.8819,
+    "test_on_1b": 0.8393,
+    "test_on_3b": 0.8265
+  }
+}

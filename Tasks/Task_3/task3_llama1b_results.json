@@ -1,0 +1,59 @@
+{
+  "model": "Llama-3.2-1B",
+  "V1_SelfCheckGPT_NLI": {
+    "auroc": 0.5503,
+    "auprc": 0.6048,
+    "f1": 0.6449,
+    "ece": 0.1823,
+    "latency_ms": 8955.2,
+    "forward_passes_per_query": 5
+  },
+  "V2_SelfCheckGPT_BERTScore": {
+    "auroc": 0.151,
+    "auprc": 0.3359,
+    "f1": 0.6277,
+    "ece": 0.2934,
+    "latency_ms": 12960.3,
+    "forward_passes_per_query": 5
+  },
+  "V3_SelfCheckGPT_Ngram": {
+    "auroc": 0.5,
+    "auprc": 0.5,
+    "f1": 0.0,
+    "ece": 0.3012,
+    "latency_ms": 8606.3,
+    "forward_passes_per_query": 5
+  },
+  "cross_domain": {
+    "medical": {
+      "V1_NLI_auroc": 0.4821,
+      "V2_BERTScore_auroc": 0.4234,
+      "V3_Ngram_auroc": 0.5
+    },
+    "legal": {
+      "V1_NLI_auroc": 0.4612,
+      "V2_BERTScore_auroc": 0.3987,
+      "V3_Ngram_auroc": 0.5
+    }
+  },
+  "k_curve": {
+    "K_values": [
+      2,
+      3,
+      5,
+      10
+    ],
+    "NLI_auroc": [
+      0.5521,
+      0.5734,
+      0.5503,
+      0.5612
+    ],
+    "NLI_latency_ms": [
+      3821.4,
+      5734.2,
+      8955.2,
+      17823.6
+    ]
+  }
+}

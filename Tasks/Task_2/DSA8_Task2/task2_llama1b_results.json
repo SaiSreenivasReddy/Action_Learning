@@ -1,0 +1,39 @@
+{
+  "model": "Llama-3.2-1B",
+  "V1_SemanticEntropy": {
+    "auroc": 0.5156,
+    "auprc": 0.5019,
+    "f1": 0.5778,
+    "ece": 0.0342,
+    "latency_ms": 1191.7,
+    "forward_passes_per_query": 5
+  },
+  "V2_KernelLanguageEntropy": {
+    "auroc": 0.5349,
+    "auprc": 0.5844,
+    "f1": 0.5,
+    "ece": 0.3146,
+    "latency_ms": 8.7,
+    "forward_passes_per_query": 5
+  },
+  "V3_Perplexity_NLL": {
+    "auroc": 0.7518,
+    "auprc": 0.789,
+    "f1": 0.64,
+    "ece": 0.1944,
+    "latency_ms": 35.7,
+    "forward_passes_per_query": 1
+  },
+  "cross_domain": {
+    "medical": {
+      "V1_SE_auroc": 0.523,
+      "V2_KLE_auroc": 0.4553,
+      "V3_PPL_auroc": 0.5161
+    },
+    "legal": {
+      "V1_SE_auroc": 0.5096,
+      "V2_KLE_auroc": 0.5025,
+      "V3_PPL_auroc": 0.7982
+    }
+  }
+}

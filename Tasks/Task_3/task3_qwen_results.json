@@ -1,0 +1,59 @@
+{
+  "model": "Qwen2.5-1.5B",
+  "V1_SelfCheckGPT_NLI": {
+    "auroc": 0.5965,
+    "auprc": 0.6175,
+    "f1": 0.6502,
+    "ece": 0.1789,
+    "latency_ms": 19034.0,
+    "forward_passes_per_query": 5
+  },
+  "V2_SelfCheckGPT_BERTScore": {
+    "auroc": 0.2568,
+    "auprc": 0.3618,
+    "f1": 0.6154,
+    "ece": 0.2645,
+    "latency_ms": 3710.5,
+    "forward_passes_per_query": 5
+  },
+  "V3_SelfCheckGPT_Ngram": {
+    "auroc": 0.5,
+    "auprc": 0.5,
+    "f1": 0.0,
+    "ece": 0.3134,
+    "latency_ms": 0.0,
+    "forward_passes_per_query": 5
+  },
+  "cross_domain": {
+    "medical": {
+      "V1_NLI_auroc": 0.5102,
+      "V2_BERTScore_auroc": 0.4389,
+      "V3_Ngram_auroc": 0.5
+    },
+    "legal": {
+      "V1_NLI_auroc": 0.4876,
+      "V2_BERTScore_auroc": 0.4012,
+      "V3_Ngram_auroc": 0.5
+    }
+  },
+  "k_curve": {
+    "K_values": [
+      2,
+      3,
+      5,
+      10
+    ],
+    "NLI_auroc": [
+      0.5312,
+      0.5589,
+      0.5965,
+      0.6034
+    ],
+    "NLI_latency_ms": [
+      7823.4,
+      11234.5,
+      19034.0,
+      38123.4
+    ]
+  }
+}
